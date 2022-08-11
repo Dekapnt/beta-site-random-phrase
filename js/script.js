@@ -6,9 +6,13 @@ function randomNumber (min, max) {
 
 const phraseTextElement = document.querySelector('.card__text');
 const phraseAuthorElement = document.querySelector('.card__author');
+
 let phraseNumber = randomNumber(1, 10);
 let testNumbetRepeat = 0;
+
 showPhrase()
+
+
 function showPhrase () {
 	if (phraseNumber === 1) {
 		if (testNumbetRepeat === 1) {
