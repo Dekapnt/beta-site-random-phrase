@@ -3,17 +3,20 @@
 function randomNumber (min, max) {
 	return Math.floor(Math.random() * (max - min + 1) + min);
 }
-
+//Обьевляем константы с классами
 const phraseTextElement = document.querySelector('.card__text');
 const phraseAuthorElement = document.querySelector('.card__author');
+const btnUpdatePhrase = document.querySelector('.main__btn_link')
 
-let phraseNumber = randomNumber(1, 10);
-let testNumbetRepeat = 0;
+
+
+btnUpdatePhrase.addEventListener('click', showPhrase)
 
 showPhrase()
-
-
 function showPhrase () {
+	//обьевляем различные переменные
+	let phraseNumber = randomNumber(1, 10);
+	let testNumbetRepeat = 0;
 	if (phraseNumber === 1) {
 		if (testNumbetRepeat === 1) {
 			phraseNumber = randomNumber(1, 10)

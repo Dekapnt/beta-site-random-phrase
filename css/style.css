@@ -233,7 +233,8 @@ body {
     margin: 0 auto 50px;
   }
 }
-.main .main__btn {
+.main .main__btn .main__btn_link {
+  color: #fff;
   height: 4.375em;
   width: 10.625em;
   background: green;
@@ -250,24 +251,19 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.main .main__btn .main__btn_link {
-  line-height: 4.375em;
-  width: 10.625em;
-  color: #fff;
-}
 @media (min-width: 769px) and (max-width: 1024px) {
-  .main {
-    font-size: 22px;
+  .main .main__btn .main__btn_link {
+    font-size: 21px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1750px) {
-  .main {
-    font-size: 26px;
+  .main .main__btn .main__btn_link {
+    font-size: 24px;
   }
 }
 @media (min-width: 1750px) {
-  .main {
-    font-size: 45px;
+  .main .main__btn .main__btn_link {
+    font-size: 40px;
   }
 }
 
